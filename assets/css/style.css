@@ -314,7 +314,7 @@ footer {
     .left-about-heading, .right-about-heading {
         width: inherit;
     }
-}
+
     .left-about-heading h2, .right-about-heading h2 {
         width: 100%;
         text-align: center;
@@ -324,3 +324,15 @@ footer {
         text-align: center;
         padding: 0 20px;
     }
+
+    #photo {
+        column-count: 3;
+    }
+}
+
+/* For small screen sizes 800px and down */
+@media screen and (max-width: 800px) {
+    #photo {
+        column-count: 2;
+    }
+}
